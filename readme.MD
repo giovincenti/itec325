@@ -23,7 +23,7 @@ For Debian users, you can install it in two steps:
 - Install snap's core: `sudo snap install core`
 - Install Postman: `sudo snap install postman`
 
-## systemd
+## systemd commands
 
 The following commands are frequently used to manage systemd:
 
@@ -33,3 +33,15 @@ The following commands are frequently used to manage systemd:
 - `systemctl enable <service>` to enable a service at startup
 - `systemctl disable <service>` to remove a service from startup
 - `journalctl` to access the logs associated with systemd
+
+## Commands for this example
+
+systemd commands that we will use for this example:
+
+- Move the simpleapi.service file into position: `sudo mv /path/to/file/simpleapi.service /etc/systemd/system/`
+- Enable the service: `sudo systemctl enable simpleapi`
+- Start the service: `sudo systemctl start simpleapi`
+- Check the status of the service: `sudo systemctl status simpleapi`
+- Stop the service: `sudo systemctl stop simpleapi`
+- Disable the service: `sudo systemctl disable simpleapi`
+- Remove the file from the directory: `sudo rm /etc/systemd/system/simpleapi.service`

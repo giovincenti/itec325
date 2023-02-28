@@ -23,6 +23,20 @@ For Debian users, you can install it in two steps:
 - Install snap's core: `sudo snap install core`
 - Install Postman: `sudo snap install postman`
 
+## To use the demo files
+
+Using Postman, import the file ITEC 325.postman_collection.json.
+
+Save the files itec325.zip and simpleapi.service to a directory of your choice.
+
+Create the directory 'demo' and expand the file itec325.zip in it.
+
+Using a terminal window, navigate to /path/to/demo and then run `npm install`, which will install the necessary packages.
+
+To run the application, you can either call `node index.js`, `npm start`, or `npm run dev`.
+
+Use the Postman collection to test that the application is running as expected.
+
 ## systemd commands
 
 The following commands are frequently used to manage systemd:

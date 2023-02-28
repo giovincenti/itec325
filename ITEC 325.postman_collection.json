@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e86de540-2fa7-483e-8f12-10fe9b8b7c05",
+		"name": "ITEC 325",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8325",
+					"host": [
+						"localhost"
+					],
+					"port": "8325"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Celsius to Fahrenheit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8325/temp/?tempc=100",
+					"host": [
+						"localhost"
+					],
+					"port": "8325",
+					"path": [
+						"temp",
+						""
+					],
+					"query": [
+						{
+							"key": "tempc",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fahrenheit to Celsius",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8325/temp/?tempf=100",
+					"host": [
+						"localhost"
+					],
+					"port": "8325",
+					"path": [
+						"temp",
+						""
+					],
+					"query": [
+						{
+							"key": "tempf",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
